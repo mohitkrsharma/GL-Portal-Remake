@@ -1,0 +1,48 @@
+html, body { height: 100%; font-size: 10px !important; /* 1 rem will be equal to 10px */ }
+body {
+  margin: 0;
+  font-family:Manrope !important;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+mat-form-field, button {
+  font-family: Manrope !important;
+}
+html {
+  /* font-size: 10px; */
+  /*
+  10px/16px = 0.625 = 62.5%
+  percentage of user's browser font-size setting*/
+  font-size: 62.5%;
+}
+/* styles.scss or styles.css */
+
+/* Use ::ng-deep to override Angular Material styles */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: transparent; /* Hide the outline color */
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  border-color: transparent; /* Hide the outline border color when focused */
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start {
+  border-color: transparent; /* Hide the start border of the outline */
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border-color: transparent; /* Hide the end border of the outline */
+}
+
+/* Optional: Hide underline and floating label */
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+::ng-deep .mat-form-field-label {
+  display: none;
+}
+
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+  font-family: Manrope !important;
+}

@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://accounts-stage.globallogic.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

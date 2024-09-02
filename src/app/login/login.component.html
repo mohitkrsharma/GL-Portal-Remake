@@ -1,0 +1,38 @@
+<div class="container landing-page">
+  <div class="info-section">
+    <p class="info-heading">Globallogic Sign In</p>
+  </div>
+  <div class="login-section">
+    <section class="input-section">
+      <form [formGroup]="loginForm">
+        <div class="username-div">
+          <mat-form-field>
+            <input matInput type="email" class="username-input" formControlName="emailFormControl" placeholder="User Name">
+          </mat-form-field>
+        </div>
+        <div class="password-div">
+          <mat-form-field>
+            <input matInput type="password" class="password-input" formControlName="passwordFormControl" placeholder="Password">
+          </mat-form-field>
+        </div>
+        <div class="forgot-password-div">
+          <span class="forgot-password-span"><a>Forgot Password?</a></span>
+        </div>
+        <div class="login-btn-div">
+          <button mat-flat-button class="login-btn" (click)="logIn()">Log In</button>
+        </div>
+        <div class="error-message" *ngIf="hasError">
+          <span>{{errorMessage}}</span>
+        </div>
+        <div class="line-div">
+          <hr>
+          <span>or</span>
+          <hr>
+        </div>
+        <div class="login-btn-div">
+          <button mat-flat-button class="log-with-duo">Log with DUO</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</div>

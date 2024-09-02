@@ -1,0 +1,197 @@
+$background-image: url('../../assets/images/background-image.jpg');
+/*custom class for landing-page*/
+.landing-page{
+  height: 100vh;
+  width: 100vw;
+  background-image: $background-image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.info-section{
+  display: flex;
+  flex: 0.65;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.login-section{
+  flex: 0.35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;*/
+  background-color: rgba(0, 0, 0, .35);
+}
+
+.info-section p{
+  color: #ffffff;
+  font-size: 2.438rem;
+  font-weight: 700 !important;
+  text-shadow: 1px 0 0 #F1F1F1;
+}
+
+.login-section p {
+  color: #ffffff;
+}
+
+.login-form-field{
+  width: 100%;
+}
+ .username-input,.password-input{
+   width: 100%;
+   height: 34px;
+   margin: 4px 0;
+   border: none;
+   outline: none;
+   font-size: 13px;
+   color: #FFF;
+   border-bottom: 1px solid #ccc;
+   background-color: transparent;
+   box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+   padding: 0; /* Remove any padding that might affect the input */
+ }
+body{
+  font-family: 'Manrope' !important;
+}
+
+.mat-form-field{
+  width: 50%;
+}
+/* styles.css or your component's CSS */
+::ng-deep .mat-input-element {
+  caret-color: transparent !important; /* Remove caret color */
+}
+
+input{
+  font-family: Manrope !important;
+}
+input::placeholder{
+  font-family: Manrope !important;
+}
+
+
+.username-div,.password-div,.login-btn-div,.line-div,.log-with-duo,.error-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-section{
+  width: 100%;
+}
+
+.forgot-password-span {
+  color: #FF5F2D !important;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+  margin-left: 48px;
+  font-weight: bold !important;
+  font-size: 13px !important;
+}
+
+.forgot-password-span a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-btn,.log-with-duo {
+  background-color: #FF5F2D;
+  color: #FFFFFF;
+  width: 55%;
+}
+
+div .mat-form-field-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.forgot-password-div {
+  margin-top: 8px !important;
+}
+
+.username-div,.password-div{
+  height: 50px !important;
+}
+.login-btn-div,.log-with-duo{
+  margin-top: 23px !important;
+}
+
+.divider-wrap{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.error-message{
+  margin-bottom: 10px;
+  color: #cf3708 !important;
+}
+
+divider-line {
+  width: 45%;
+  border-top: 1px solid #ffffff;
+}
+
+divider-text {
+  width: 10%;
+  color: #ffffff;
+}
+
+.line-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  hr{
+    width: 45% !important;
+  }
+  span{
+    color: #FFFFFF;
+  }
+}
+
+.login-btn:hover,.log-with-duo:hover{
+  background-color: #CF3707 !important;
+}
+/*custom css media queries for different screen sizes and mobile responsiveness*/
+@media screen and (max-width: 1260px){
+  .info-section{
+    flex: 0.5;
+  }
+  .login-section{
+    flex: 0.5;
+  }
+  .info-heading{
+    font-size: 27.3px !important;
+  }
+}
+@media screen  and (max-width: 760px){
+  .info-heading{
+    display: none;
+  }
+  .info-section{
+    flex: 0;
+  }
+  .login-section{
+    flex: 1;
+  }
+}
+
+.error-message{
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+}
